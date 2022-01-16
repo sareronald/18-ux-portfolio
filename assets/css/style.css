@@ -10,21 +10,21 @@ body {
 }
 
 /* font-family: 'Playfair Display', serif; */
-/* font-family: 'Noto Sans', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
 
 /* Navigation Styles */
 .flex {
   display: flex;
-  /* gap: var (--gap, 1rem); */
+  gap: 1rem;
 }
 
 .grid {
   display: grid;
-  /* gap: var (--gap, 1rem); */
+  gap: 1rem;
 }
 
 .logo {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .primary-header {
@@ -32,6 +32,10 @@ body {
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0 20px;
 }
 
 .primary-navigation {
@@ -43,7 +47,7 @@ body {
 .nav-item a {
   color: black;
   text-decoration: none;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -52,6 +56,246 @@ body {
   cursor: pointer;
 }
 
+.nav-item a:hover {
+  background: linear-gradient(45deg, #f63443, #ff6a00);
+  background-size: 100%;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .mobile-nav-toggle {
   display: none;
 }
+
+/* Landing Page Content */
+#hero {
+  padding-top: 4rem;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.introduction {
+  margin-top: 5rem;
+}
+
+/* My name on the Landing page */
+.myName {
+  font-family: "Playfair Display", serif;
+  font-size: 6em;
+  background: linear-gradient(45deg, #f63443, #ff6a00);
+  background-size: 100%;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 0.2em;
+  padding-top: 0.5em;
+  margin-bottom: -0.2em;
+}
+
+.first {
+  line-height: 0.75;
+}
+
+.last {
+  line-height: 0.75;
+  padding-left: 1rem;
+}
+
+.welcome {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  padding-top: 20px;
+  width: 60%;
+}
+
+#check-out {
+  bottom: 100px;
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.linkDesign {
+  padding: 20px 0;
+}
+
+.linkDesign a {
+  text-decoration: none;
+  color: black;
+}
+
+#self-portrait {
+  padding: 80px;
+}
+
+/* projects section */
+#projects-container {
+  padding-top: 150px;
+  margin: 0 auto;
+}
+
+.project-intro {
+  font-family: "Open Sans", sans-serif;
+  max-width: 40rem;
+  text-align: right;
+  margin-right: 0;
+}
+
+.large-body-text {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#more-about-me {
+  font-size: 1em;
+}
+
+.project-work {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 1800px; */
+  /* display: grid; */
+  grid-template-columns: repeat (2, 1fr);
+  max-width: 44rem;
+  margin: 0 auto;
+  display: column;
+  columns: 2;
+  gap: 4rem;
+}
+
+.portfolio-image {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  /* border-bottom: 0.4em solid red; */
+}
+
+#studyco-border {
+  border-bottom: 0.4em solid #dc3d4b;
+}
+
+#lous-border {
+  border-bottom: 0.4em solid #f26b1d;
+}
+
+#travelsafe-border {
+  border-bottom: 0.4em solid #009bde;
+}
+
+#dese-border {
+  border-bottom: 0.4em solid #feb603;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 3rem;
+  left: 2.4rem;
+}
+
+.project-card {
+  position: relative;
+  /* border: 1em solid red; */
+  margin-bottom: 3rem;
+  max-width: 100%;
+}
+
+.serif-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.card-line {
+  width: 2rem;
+  height: 0.3rem;
+  background-color: black;
+}
+
+.card-line-white {
+  width: 2rem;
+  height: 0.3rem;
+  background-color: white;
+}
+
+.project-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-top: 1rem;
+  max-width: 15rem;
+}
+
+.white-text {
+  color: white;
+}
+
+/* footer */
+footer {
+  padding-top: 50px;
+}
+
+.contact {
+  color: black;
+  /* text-decoration: none; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.contact-me a {
+  text-decoration: none;
+  background: linear-gradient(45deg, #f63443, #ff6a00);
+  background-size: 100%;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  padding-top: 20px;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-item {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  /* letter-spacing: 0.2em; */
+  font-size: 1rem;
+  margin-right: 2.5rem;
+  text-align: center;
+}
+
+.footer-links li {
+  padding-bottom: 20px;
+  padding: 0 20px;
+  padding-bottom: 50px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.footer-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+/* Responsive layout - Media Queries */
+/* @media (max-width: 800px) {
+  #hero {
+    flex-direction: column;
+  }
+} */
