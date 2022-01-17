@@ -115,11 +115,43 @@ body {
 
 #check-out {
   bottom: 100px;
-  position: absolute;
+  /* position: absolute; */
+  /* vertical-align: bottom; */
   font-family: "Open Sans", sans-serif;
   font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 0.1em;
+  text-decoration: none;
+  color: black;
+}
+
+.my-projects {
+  margin-top: 10rem;
+}
+
+.arrow {
+  position: relative;
+  bottom: 50px;
+  left: 80%;
+  margin-left: -20px;
+  width: auto;
+  height: auto;
+}
+
+.bounce {
+  animation: bounceArrow 0.7s infinite;
+}
+
+@keyframes bounceArrow {
+  from {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 7px;
+  }
+  to {
+    margin-top: 0px;
+  }
 }
 
 .linkDesign {
@@ -145,7 +177,7 @@ body {
   font-family: "Open Sans", sans-serif;
   max-width: 40rem;
   text-align: right;
-  margin-right: 0;
+  margin-right: 1rem;
 }
 
 .large-body-text {
@@ -168,7 +200,7 @@ body {
   margin: 0 auto;
   display: column;
   columns: 2;
-  gap: 4rem;
+  /* gap: 4rem; */
 }
 
 .portfolio-image {
@@ -201,7 +233,7 @@ body {
 .project-card {
   position: relative;
   /* border: 1em solid red; */
-  margin-bottom: 3rem;
+  margin-bottom: 1.2rem;
   max-width: 100%;
 }
 
@@ -293,9 +325,33 @@ footer {
   font-weight: normal;
 }
 
+.footer-wave {
+  position: absolute;
+  background-image: url("../../assets/images/wave.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 15rem;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+/* About Page */
+
 /* Responsive layout - Media Queries */
-/* @media (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   #hero {
     flex-direction: column;
   }
-} */
+  .mobile-nav-toggle {
+    position: absolute;
+    z-index: 2000;
+    background-image: url("../../assets/images/hamburger.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 2rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+}

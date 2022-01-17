@@ -46,25 +46,29 @@
         /></a>
         <!-- Toggle for Responsive navigation -->
         <button
-          aria-controls="primary-navigation"
+          aria-controls="primary-header"
           aria-expanded="false"
           class="mobile-nav-toggle"
         >
           <span class="sr-only">Menu</span>
+          <!-- <i class="fas fa-bars icon-4x"></i> -->
         </button>
         <ul
           data-visible="false"
           id="primary-navigation"
           class="primary-navigation flex"
         >
-          <!-- <li class="nav-item active">
+          <li class="nav-item active">
             <a href="index.html">Home</a>
-          </li> -->
+          </li>
           <li class="nav-item active">
             <a href="#projects-container">Work</a>
           </li>
           <li class="nav-item active">
             <a href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#contact-me">Contact</a>
           </li>
         </ul>
       </nav>
@@ -74,8 +78,8 @@
           <div>
             <hr width="100px" />
             <h4 class="welcome">
-              I am a UX/UI designer and front-end web developer based in
-              Armidale in regional New South Wales.
+              I am an Australian UX/UI designer and front-end web developer
+              based in Armidale in regional New South Wales.
             </h4>
             <h4 class="welcome">Welcome to my Portfolio!</h4>
           </div>
@@ -83,10 +87,15 @@
             <h1 class="first">Sarah</h1>
             <h1 class="last">Ronald</h1>
           </div>
-          <div class="linkDesign">
-            <a href="#projects-container" id="check-out">
-              Check out some of my projects <i class="fas fa-arrow-down"></i>
-            </a>
+          <div class="grid my-projects">
+            <div>
+              <a href="#projects-container" id="check-out">
+                Check out some of my projects
+              </a>
+            </div>
+            <div class="arrow bounce">
+              <i class="fas fa-arrow-down"></i>
+            </div>
           </div>
         </div>
         <img
@@ -182,9 +191,9 @@
 
       <!-- footer section -->
       <footer>
-        <div class="contact">
+        <div class="contact" id="contact-me">
           <h4>
-            Lets start a project together. Don't hesitate to
+            Let's start a project together. Don't hesitate to
             <span class="contact-me"
               ><a
                 href="mailto:sareronald737@gmail.com?subject=hi%20Sarah"
@@ -193,20 +202,34 @@
               ></span
             >.
           </h4>
+          <!-- <h5>sareronald737@gmail.com</h5> -->
           <br />
           <hr />
         </div>
         <div class="footer-list">
           <p class="footer-item">&copy; Last updated January 2022</p>
           <ul class="footer-links">
-            <li class="footer-item"><a href="#">Email</a></li>
-            <li class="footer-item"><a href="#">LinkedIn</a></li>
-            <li class="footer-item"><a href="#">Github</a></li>
-            <li class="footer-item"><a href="#">Resume</a></li>
+            <li class="footer-item">
+              <a href="mailto:sareronald737@gmail.com?subject=hi%20Sarah"
+                >Email</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="linkedin.com/in/sarah-ronald">LinkedIn</a>
+            </li>
+            <li class="footer-item">
+              <a href="https://github.com/sareronald">Github</a>
+            </li>
+            <li class="footer-item">
+              <a
+                href="https://docs.google.com/document/d/1bbbNCrFUxD9Xr7DOs7CdYop4pV-kHfoYLT13YX8KgdU/edit?usp=sharing"
+                >Resume</a
+              >
+            </li>
           </ul>
         </div>
         <div>
-          <img src="assets/images/wave.png" alt="footer wave" width="100%" />
+          <div class="footer-wave"></div>
         </div>
       </footer>
     </header>
