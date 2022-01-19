@@ -425,6 +425,36 @@ header {
   border: none;
 }
 
+.header-image {
+  width: 80%;
+  height: 80%;
+}
+
+.sml-image {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.lrg-image {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.image-placeholder {
+  background: url(https://via.placeholder.com/550x400);
+  width: 80%;
+  height: 30rem;
+  margin: 0 5rem;
+}
+
 /* FOOTER */
 footer {
   padding-top: 50px;
