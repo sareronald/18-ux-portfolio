@@ -418,6 +418,13 @@ header {
   font-weight: 300;
 }
 
+/* PROJECTS pages */
+.lous-container {
+  background-color: #4dd4d3;
+  padding-bottom: 0;
+  border: none;
+}
+
 /* FOOTER */
 footer {
   padding-top: 50px;
