@@ -68,7 +68,7 @@ header {
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1rem;
   padding: 2rem 5vw;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 /* Navigation Styles */
@@ -330,6 +330,94 @@ header {
   color: white;
 }
 
+/* ABOUT PAGE */
+.container-gradient {
+  background-color: #333399;
+  padding-bottom: 0;
+  border: none;
+}
+.intro {
+  padding-top: 8vh;
+  padding-left: 12vw;
+  padding-right: 9vw;
+}
+.page-title {
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+}
+
+.written-detail {
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem 2vw;
+}
+
+.written-detail p {
+  padding-bottom: 1.4rem;
+}
+
+.external-links {
+  justify-content: space-evenly;
+}
+
+.contact-button {
+  padding: 1rem 4rem;
+  border-radius: 0.25rem;
+  border: 0.1rem solid white;
+  /* background: #ff6a00; */
+  background-image: linear-gradient(45deg, #f63443, #ff6a00);
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.list-flex {
+  display: flex;
+  gap: 4rem;
+  /* justify-content: space-around; */
+  flex-direction: row;
+}
+
+.skills {
+  list-style-position: inside;
+  min-width: 18rem;
+}
+
+.skills ul li {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+.list-title {
+  list-style: none;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.skills-card {
+  background-image: linear-gradient(45deg, #f66570, #ffc399);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.skills p {
+  font-weight: 300;
+}
+
 /* FOOTER */
 footer {
   padding-top: 50px;
@@ -342,6 +430,7 @@ footer {
   text-align: center;
   font-size: 2.5em;
   padding: 1em;
+  padding-bottom: 0;
 }
 
 .contact-me a {
@@ -356,7 +445,7 @@ footer {
 .footer-list {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 2vw;
+  padding: 1rem;
 }
 
 .footer-links {
@@ -394,46 +483,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-/* ABOUT PAGE */
-.about-header {
-  background-color: aliceblue;
-  margin: 0 auto;
-  padding: 0 5rem;
-  margin-bottom: 0.5rem;
-  justify-content: space-between;
-}
-
-.page-title {
-  font-size: 3em;
-  font-family: "Playfair Display", serif;
-}
-
-.subtitle {
-  font-family: "Open Sans", sans-serif;
-}
-
-.written-detail {
-  font-family: "Open Sans", sans-serif;
-  padding: 1rem 2vw;
-}
-
-.written-detail p {
-  padding-bottom: 1.4rem;
-}
-
-.contact-button {
-  padding: 1rem 2.5rem;
-  border-radius: 0.25rem;
-  border: none;
-  background: linear-gradient(45deg, #f63443, #ff6a00);
-  color: black;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-/* RESPONSIVE - Media Queries */
+/* RESPONSIVE WEB DEVELOPMENT - Media Queries */
 @media only screen and (max-width: 720px) {
   :root {
     --grid-a: 12;
@@ -461,6 +511,10 @@ footer {
   }
 
   .flex {
+    flex-direction: column;
+  }
+
+  .list-flex {
     flex-direction: column;
   }
 
