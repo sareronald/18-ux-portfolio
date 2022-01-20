@@ -526,7 +526,7 @@ footer {
 }
 
 /* RESPONSIVE WEB DEVELOPMENT - Media Queries */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 600px) {
   :root {
     --grid-a: 12;
     --grid-b: 12;
