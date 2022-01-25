@@ -73,7 +73,7 @@ body {
   /* background-color: aquamarine; */
 }
 
-/* Navigation Styles */
+/* NNAVIGATION STYLES */
 .brand {
   margin: 1rem;
 }
@@ -165,7 +165,7 @@ body {
 }
 
 .illustration {
-  width: 100%;
+  max-width: 100%;
   background-color: transparent;
 }
 
